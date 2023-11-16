@@ -1,0 +1,96 @@
+:root {
+    --tituloPrincipal: "Lobster Two", cursive;
+    --fuenteSecundaria: "Nanum Myeongjo";
+    --fuenteBotones: 'Roboto', sans-serif;
+}
+
+html, body {
+    background-color: #004D00;
+    color: white;
+    margin: 0px;
+    zoom: 85%;
+}
+
+.titulo {
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 15px;
+    font-size: 28px;
+    font-family: var(--tituloPrincipal);
+}
+
+.botones {
+    display: flex;
+   justify-content: center;
+   gap: 20px;
+   margin-top: 20px;
+   margin-bottom: 15px;
+}
+
+.boton-primario {
+    background-color: blue;
+    color: white;
+    font-size: 25px;
+    border-radius: 10px;
+    border: none;
+    font-family: var(--fuenteBotones);
+    cursor: pointer;
+}
+
+.boton-primario:hover {
+    background-color: darkblue;
+}
+
+.boton-secundario {
+    color: white;
+    background-color: red;
+    font-size: 25px;
+    border-radius: 10px;
+    border: none;
+    padding: 19px;
+    font-family: var(--fuenteBotones);
+    cursor: pointer;
+}
+
+.boton-secundario:hover{
+    background-color: darkred;
+}
+
+.carta {
+    position: relative;
+    width: 150px;
+    left: 100px;
+    margin-left: -60px;
+}
+
+.puntos {
+    font-family: var(--fuenteSecundaria);
+    font-size: 25px;
+}
+
+@media (min-width: 768px)  {
+    .puntos {
+        font-size: 40px;
+    }
+}
+
+.texto-anuncio_perdiste {
+    font-family: var(--fuenteSecundaria);
+    font-size: 38px;
+    color: darkred;
+    text-align: center;
+}
+
+.texto-anuncio_ganaste {
+    font-family: var(--fuenteSecundaria);
+    font-size: 38px;
+    color: darkblue;
+    text-align: center;
+}
+.texto-anuncio_nadie {
+    font-family: var(--fuenteSecundaria);
+    font-size: 38px;
+    color: darkorange;
+    text-align: center;
+}
